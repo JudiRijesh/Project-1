@@ -15,6 +15,8 @@ body {
     max-width: 250px;
     max-height: 250px; 
     margin-top: -60px;
+    padding-left: 40px;
+    
 }
 .menu {
     display: flex;
@@ -23,7 +25,6 @@ body {
     gap: 10px;
     margin-top: -30px;
 }
-
 .menu h2 {
     margin: 0; 
     font-size: 14px; 
@@ -36,6 +37,22 @@ body {
     background-color: whitesmoke; 
     border-radius: 5px; 
 }
+.menu button {
+    padding: 5px 10px;
+    font-size: 12px; 
+    background-color: rgb(207, 179, 107); 
+    border: none; 
+    border-radius: 10px;
+    color: white; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.menu button:hover {
+    background-color: darkgoldenrod; 
+}
+
+
 .books-section {
     display: flex;
     justify-content: center;
@@ -114,4 +131,19 @@ footer {
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.cart button{
+    padding: 5px 10px;
+    font-size: 12px; 
+    background-color: rgb(207, 179, 107); 
+    border: none; 
+    border-radius: 10px;
+    color: white; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    float: right;
+}
+.menu button:hover {
+    background-color: darkgoldenrod; 
 }

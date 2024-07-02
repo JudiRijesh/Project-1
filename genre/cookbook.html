@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="style1.css">
 </head>
 <body>
+    <br>
+    <br>
+    <br>
+    <a href="../cart.html" style="color: white;" class="cart button">
+        <button>Cart</button>   
+    </a>
     <header class="header">
         <img src="logo.jpg" alt="Logo" class="logo">
 
@@ -21,71 +27,73 @@
    <br>
    <br>
    <br>
-    
-    <section class="books-section">
-
-        <div class="book">
-            <img src="../bookImages2/image1.jpg" alt="Book1">
-            <div class="book-info">
-                <p>Life of Pi</p>
-                <p>Author: Yann Martel</p>
-            </div>
-            <div class="book-buttons">  
-                <button class="add-to-cart">Add to Cart</button>
-                <a href="https://www.ssgopalganj.in/online/E-Books/CLASS%20VIII/Life%20of%20Pi%20by%20Yann%20Martel.pdf" class="read-link"><button>Read the book</button></a>   
-            </div> 
+   <h4 style="color: white;">Cookbooks</h4>
+   <a href="../genre.html">
+    <h4 style="color: white;">Genre</h4>
+    </a>
+   <section class="books-section">
+    <div class="book">
+        <img src="../bookImages2/image50.jpg" alt="Book1">
+        <div class="book-info">
+            <p>Cravings: Hungry for More</p>
+            <p>Author: Chrissy Teigen</p>
         </div>
-
-        <div class="book">
-            <img src="../bookImages2/image2.jpg" alt="Book1">
-            <div class="book-info">
-                <p>The Three Musketeers</p>
-                <p>Author: Alexandre Dumas</p>
-            </div>
-            <div class="book-buttons">  
-                <button class="add-to-cart">Add to Cart</button>
-                <a href="https://www.defence.lk/upload/ebooks/The%20Three%20Musketeers.pdf" class="read-link"><button>Read the book</button></a>   
-            </div> 
+        <div>
+            <button onclick="addToCart('Cravings: Hungry for More', 'Chrissy Teigen', '../bookImages2/image50.jpg')" class="book-buttons">Add to Cart</button>
+            <a href="https://www.usu.edu/aggiewellness/files/USU-Student-Cookbook-FINAL-1.pdf" class="read-link"><button>Read the book</button></a>
         </div>
-        
-        <div class="book">
-            <img src="../bookImages2/image3.jpg" alt="Book1">
-            <div class="book-info">
-                <p>The Call of the Wild</p>
-                <p>Author: Jack London</p>
-            </div>
-            <div class="book-buttons">  
-                <button class="add-to-cart">Add to Cart</button>
-                <a href="https://www.ibiblio.org/ebooks/London/Call%20of%20Wild.pdf" class="read-link"><button>Read the book</button></a>   
-            </div> 
+    </div>
+
+    <div class="book">
+        <img src="../bookImages2/image51.jpg" alt="Book2">
+        <div class="book-info">
+            <p>The Jemima Code</p>
+            <p>Author: Toni Tipton Martin</p>
         </div>
-
-        <div class="book">
-            <img src="../bookImages2/image4.jpg" alt="Book1">
-            <div class="book-info">
-                <p>The Count of Monte Cristo</p>
-                <p>Author: Dan Brown</p>
-            </div>
-            <div class="book-buttons">  
-                <button class="add-to-cart">Add to Cart</button>
-                <a href="https://www.epedagogia.com.br/materialbibliotecaonine/797The-Count-of-Monte-Cristo.pdf" class="read-link"><button>Read the book</button></a>   
-            </div> 
+        <div>
+            <button onclick="addToCart('The Jemima Code', 'Toni Tipton Martin', '../bookImages2/image51.jpg')" class="book-buttons">Add to Cart</button>
+            <a href="https://www.researchgate.net/publication/330130431_The_Jemima_Code_two_centuries_of_African_American_cookbooks" class="read-link"><button>Read the book</button></a>
         </div>
+    </div>
 
-        <div class="book">
-            <img src="../bookImages2/image5.jpg" alt="Book1">
-            <div class="book-info">
-                <p>TThe Hunger Games</p>
-                <p>Author: Alexandre Dumas</p>
-            </div>
-            <div class="book-buttons">  
-                <button class="add-to-cart">Add to Cart</button>
-                <a href="https://www.deyeshigh.co.uk/downloads/literacy/world_book_day/the_hunger_games_-_trilogy.pdf" class="read-link"><button>Read the book</button></a>   
-            </div> 
+    <div class="book">
+        <img src="../bookImages2/image52.jpg" alt="Book3">
+        <div class="book-info">
+            <p>Mastering the Art of French Cooking, Volume 1</p>
+            <p>Author: Julia Child</p>
         </div>
+        <div>
+            <button onclick="addToCart('Mastering the Art of French Cooking, Volume 1', 'Julia Child', '../bookImages2/image52.jpg')" class="book-buttons">Add to Cart</button>
+            <a href="https://archive.org/details/JuliaChildMasteringTheArtOfFrenchCooking" class="read-link"><button>Read the book</button></a>
+        </div>
+    </div>
 
+    <div class="book">
+        <img src="../bookImages2/image53.jpg" alt="Book4">
+        <div class="book-info">
+            <p>The Italian Family Kitchen</p>
+            <p>Author: Eva Santaguida</p>
+        </div>
+        <div>
+            <button onclick="addToCart('The Italian Family Kitchen', 'Eva Santaguida', '../bookImages2/image53.jpg')" class="book-buttons">Add to Cart</button>
+            <a href="https://www.quarto.com/books/9781577154327/the-italian-family-kitchen" class="read-link"><button>Read the book</button></a>
+        </div>
+    </div>
 
-    </section>
+    <div class="book">
+        <img src="../bookImages2/image54.jpg" alt="Book5">
+        <div class="book-info">
+            <p>Indian Feasts</p>
+            <p>Author: Chetna Makan</p>
+        </div>
+        <div>
+            <button onclick="addToCart('Indian Feasts', 'Chetna Makan', '../bookImages2/image54.jpg')" class="book-buttons">Add to Cart</button>
+            <a href="https://www.scribd.com/document/714304734/Chetna-s-Indian-Feasts" class="read-link"><button>Read the book</button></a>
+        </div>
+    </div>
+</section>
+
 </header>
+<script src="cartfunction.js"></script>
 </body>
 </html>

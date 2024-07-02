@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <br>
+    <br>
+    <br>
+    <a href="../cart.html" style="color: white;" class="cart button">
+        <button>Cart</button>   
+    </a>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -21,71 +27,62 @@
    <br>
    <br>
    <br>
-    
-    <section class="books-section">
-
-        <div class="book">
-            <img src="../bookImages2/image1.jpg" alt="Book1">
-            <div class="book-info">
-                <p>Life of Pi</p>
-                <p>Author: Yann Martel</p>
-            </div>
-            <div class="book-buttons">  
-                <button class="add-to-cart">Add to Cart</button>
-                <a href="https://www.ssgopalganj.in/online/E-Books/CLASS%20VIII/Life%20of%20Pi%20by%20Yann%20Martel.pdf" class="read-link"><button>Read the book</button></a>   
-            </div> 
+   <h4 style="color: white;">Self help Books</h4>
+   <a href="../genre.html">
+    <h4 style="color: white;">Genre</h4>
+    </a>
+   <section class="books-section">
+    <div class="book">
+        <img src="../bookImages2/image41.jpg" alt="Book1">
+        <div class="book-info">
+            <p>Everything Is F*cked</p>
+            <p>Author: Mark Manson</p>
         </div>
-
-        <div class="book">
-            <img src="../bookImages2/image2.jpg" alt="Book1">
-            <div class="book-info">
-                <p>The Three Musketeers</p>
-                <p>Author: Alexandre Dumas</p>
-            </div>
-            <div class="book-buttons">  
-                <button class="add-to-cart">Add to Cart</button>
-                <a href="https://www.defence.lk/upload/ebooks/The%20Three%20Musketeers.pdf" class="read-link"><button>Read the book</button></a>   
-            </div> 
+        <div>
+            <button onclick="addToCart('Everything Is F*cked', 'Mark Manson', '../bookImages2/image41.jpg')" class="book-buttons">Add to Cart</button>
+            <a href="https://icrrd.com/public/media/31-10-2020-231459Everything%20is%20F_cked%20-%20Mark%20Manson.pdf" class="read-link"><button>Read the book</button></a>
         </div>
-        
-        <div class="book">
-            <img src="../bookImages2/image3.jpg" alt="Book1">
-            <div class="book-info">
-                <p>The Call of the Wild</p>
-                <p>Author: Jack London</p>
-            </div>
-            <div class="book-buttons">  
-                <button class="add-to-cart">Add to Cart</button>
-                <a href="https://www.ibiblio.org/ebooks/London/Call%20of%20Wild.pdf" class="read-link"><button>Read the book</button></a>   
-            </div> 
+    </div>
+
+    <div class="book">
+        <img src="../bookImages2/image42.jpg" alt="Book2">
+        <div class="book-info">
+            <p>Dare to Lead</p>
+            <p>Author: Brene Brown</p>
         </div>
-
-        <div class="book">
-            <img src="../bookImages2/image4.jpg" alt="Book1">
-            <div class="book-info">
-                <p>The Count of Monte Cristo</p>
-                <p>Author: Dan Brown</p>
-            </div>
-            <div class="book-buttons">  
-                <button class="add-to-cart">Add to Cart</button>
-                <a href="https://www.epedagogia.com.br/materialbibliotecaonine/797The-Count-of-Monte-Cristo.pdf" class="read-link"><button>Read the book</button></a>   
-            </div> 
+        <div>
+            <button onclick="addToCart('Dare to Lead', 'Brene Brown', '../bookImages2/image42.jpg')" class="book-buttons">Add to Cart</button>
+            <a href="https://www.cmc.edu/sites/default/files/2022-03/Brene%20Brown%20Dare%20to%20lead.pdf" class="read-link"><button>Read the book</button></a>
         </div>
+    </div>
 
-        <div class="book">
-            <img src="../bookImages2/image5.jpg" alt="Book1">
-            <div class="book-info">
-                <p>TThe Hunger Games</p>
-                <p>Author: Alexandre Dumas</p>
-            </div>
-            <div class="book-buttons">  
-                <button class="add-to-cart">Add to Cart</button>
-                <a href="https://www.deyeshigh.co.uk/downloads/literacy/world_book_day/the_hunger_games_-_trilogy.pdf" class="read-link"><button>Read the book</button></a>   
-            </div> 
+    <div class="book">
+        <img src="../bookImages2/image43.jpg" alt="Book3">
+        <div class="book-info">
+            <p>The Secret</p>
+            <p>Author: Rhonda Byrne</p>
         </div>
+        <div>
+            <button onclick="addToCart('The Secret', 'Rhonda Byrne', '../bookImages2/image43.jpg')" class="book-buttons">Add to Cart</button>
+            <a href="https://archive.org/details/rhonda-byrne-the-secret-book" class="read-link"><button>Read the book</button></a>
+        </div>
+    </div>
 
+    <div class="book">
+        <img src="../bookImages2/image44.jpg" alt="Book3">
+        <div class="book-info">
+            <p>You become what you think</p>
+            <p>Author: Shubham Kumar Singh</p>
+        </div>
+        <div>
+            <button onclick="addToCart('You become what you think', 'Shubham Kumar Singh', '../bookImages2/image44.jpg')" class="book-buttons">Add to Cart</button>
+            <a href="https://secure.toolkitfiles.co.uk/clients/9590/sitedata/files/The%20Best%20of%20the%20Best.pdf" class="read-link"><button>Read the book</button></a>
+        </div>
+    </div>
 
-    </section>
+   </section>
+
 </header>
+<script src="cartfunction.js"></script>
 </body>
 </html>

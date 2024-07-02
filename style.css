@@ -21,8 +21,8 @@ html, body {
 }
 
 .logo {
-    max-width: 250px;
-    max-height: 250px; 
+    max-width: 400px;
+    max-height: 400px; 
     margin-top: -60px;
 }
 
@@ -143,7 +143,7 @@ html, body {
     justify-content: center;
     font-size: 20px;
     padding-bottom: 40px;
-    padding-top: 70px;
+    padding-top: 50px;
 }
 .books-section {
     width: 100%;
@@ -159,42 +159,49 @@ html, body {
     grid-template-columns: repeat(5, 1fr); 
     gap: 80px;
     max-width: 1200px; 
-    
 }
 
 .book {
-    display: flex; 
-    align-items: center;
-    box-sizing: border-box;
-    text-align: left; 
+    position: relative;
+    width: 150px; /* Adjust width as needed */
+    height: 220px; /* Adjust height as needed */
+    overflow: visible; /* Allow overflow for sliding effect */
+    background-color: rgb(236, 240, 241);
     border-radius: 10px;
-    background-color: rgb(236, 240, 241)
-    
+    transition: transform 0.3s, z-index 0.3s;
 }
 
 .book img {
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
-    width: 70px;  
-    height: 100px; 
-    margin-right: 10px; 
-    
 }
 
 .book-info {
+    position: absolute;
+    top: 0;
+    left: 100%; /* Start hidden to the right */
+    width: 150px; /* Width of the sliding panel */
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: left 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    pointer-events: none; /* Prevent interactions when hidden */
 }
 
 .book p {
     margin: 5px 0;
-    font-size: 9px; 
+    font-size: 12px; 
     color: black; 
 }
 
 .book a {
-    font-size: 7px; 
+    font-size: 12px; 
     color: rgb(53, 85, 88);
     text-decoration: none;
     transition: color 0.3s;
@@ -204,9 +211,18 @@ html, body {
     color: darkgoldenrod;
 }
 
-.book:hover{
-    transform: scale(1.1); 
+.book:hover {
+    transform: scale(1.1);
+    z-index: 1; /* Bring the hovered book to the front */
 }
+
+.book:hover .book-info {
+    left: calc(150% + 10px); /* Slide out to the right */
+    opacity: 1;
+    pointer-events: auto; /* Enable interactions when visible */
+    z-index: 1; /* Ensure the book-info is above other elements */
+}
+
 .iconlist {
     list-style-type: none;
     display: flex;
@@ -220,12 +236,12 @@ html, body {
 }
 
 .iconlist i {
-    font-size: 1em; 
+    font-size: 2em; 
     color: white; 
 }
 footer {
     background-color: #355558;
-    padding: 10px 0;
+    padding-top: 120px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -322,4 +338,37 @@ footer {
     color: white;
     cursor: pointer;
     transition: background-color 0.3s;
+}
+/* dropdown for genre */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 240px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+       
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 10px;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(207, 179, 107);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
