@@ -14,6 +14,6 @@
 // Toggle dropdown on click
 document.querySelector('.dropdown > a').addEventListener('click', function(event) {
     event.preventDefault(); 
-    var dropdownContent = this.nextElementSibling;
+    let dropdownContent = this.nextElementSibling;
     dropdownContent.classList.toggle('show');
 });

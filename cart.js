@@ -32,6 +32,12 @@ let authorElement = document.createElement('h5')
 let pictureElement = document.createElement('img')
 let quantityElement = document.createElement('p')
 
+// changing font color to white
+
+titleElement.style.color = 'white'
+authorElement.style.color = 'white'
+quantityElement.style.color = 'white'
+
 //populate the elements
 
 titleElement.innerHTML = item.title
