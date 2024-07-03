@@ -1,0 +1,162 @@
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(53, 85, 88);
+    justify-content: flex-start;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    align-self: flex-start;
+    max-width: 300px;
+    max-height: 300px; 
+    margin-top: -100px;
+    padding-left: -10px;
+  }
+
+.cart-logo {
+    max-width: 150px;
+    max-height: 150px; 
+    margin-top: -20px;
+    padding-left: 50px;
+}
+
+.menu {
+    display: flex;
+    gap: 10px;
+    margin-top: -30px;
+    padding-bottom: 40px;
+    padding-left: 70px;
+}
+
+.menu h2 {
+    margin: 0; 
+    font-size: 16px; 
+    padding: 5px 10px; 
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+}
+.menu h2:hover {
+    color: rgb(53, 85, 88) ;
+    background-color: whitesmoke; 
+    border-radius: 5px; 
+}
+.menu button {
+    padding: 5px 10px;
+    font-size: 12px; 
+    background-color: rgb(207, 179, 107); 
+    border: none; 
+    border-radius: 10px;
+    color: white; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.menu button:hover {
+    background-color: darkgoldenrod; 
+}
+
+h4 {
+    padding-left: 70px;
+}
+
+.books-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px;
+    padding-left: 50px;
+    max-width: 1200px;
+    margin-top: 20px;
+    background-color: #355558;
+}
+
+.book {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(15% - 15px);
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    padding-left: 10px;
+    position: relative
+}
+
+.book img {
+    max-width: 100%;
+    height: auto;
+    height: 120px;
+    width: 80px;
+    border-radius: 5px;
+}
+
+.book-info {
+    padding: 5px;
+}
+
+.book p {
+    margin: 5px 0;
+    font-size: 8px;
+}
+
+.book button {
+    padding: 6px 12px;
+    font-size: 8px;
+    background-color: rgb(207, 179, 107);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.book button:hover {
+    background-color: darkgoldenrod;
+}
+
+.iconlist {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 0;
+}
+
+.iconlist li {
+    margin: 0 70px; 
+}
+
+.iconlist i {
+    font-size: 1em; 
+    color: white; 
+}
+footer {
+    background-color: #355558;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cart button{
+    padding: 5px 10px;
+    font-size: 12px; 
+    background-color: rgb(207, 179, 107); 
+    border: none; 
+    border-radius: 10px;
+    color: white; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    float: right;
+}
+.menu button:hover {
+    background-color: darkgoldenrod; 
+}
