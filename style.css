@@ -363,3 +363,9 @@ footer {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+/*shipping page */
+
+#colin {
+        color: white;
+        padding-left: 20px;
+}

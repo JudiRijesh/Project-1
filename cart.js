@@ -59,11 +59,8 @@ cartSection.appendChild(div);
 numberInCart.innerHTML = `Items in Shopping Cart: ${totalItems}`
 
 }
-function clearCart(){
-    localStorage.removeItem('cart')
-    alert("Thank you for ordering with us - Your books will arrive within 7 working days")
-    window.location.reload()
+function clearCart() {
+        window.location.href = 'shipping.html'
 }
-
 // Load the cart when the page is loaded
 window.onload = loadCart;
