@@ -367,5 +367,9 @@ footer {
 
 #colin {
         color: white;
-        padding-left: 20px;
+        padding-left: 70px;
+}
+
+#book-list {
+    padding-left: 70px;
 }
